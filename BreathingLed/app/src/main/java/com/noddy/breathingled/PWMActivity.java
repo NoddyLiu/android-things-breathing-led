@@ -80,7 +80,7 @@ public class PWMActivity extends Activity
 
     public void initializePwm(Pwm pwm) throws IOException
     {
-        pwm.setPwmFrequencyHz(100); // Hz：周期/每秒，100表示100次/s，即一个脉冲周期需要10ms（1000ms/100 = 10ms）
+        pwm.setPwmFrequencyHz(50); // Hz：周期/每秒，100表示100次/s，即一个脉冲周期需要10ms（1000ms/100 = 10ms）
         pwm.setPwmDutyCycle(mDutyCycleCurrent); // 默认占空比为0，如果设置为75，树莓派PWM输出3.3v电压，假设电路中不存在电阻，则一个脉冲周期内，高电平电压为3.3v * 75% = 2.475v
         pwm.setEnabled(true);
     }
