@@ -5,4 +5,4 @@
 电路图很简单，so easy！
 
 ![电路图](image.png)
-![电路图](image.png =100x100)
+<img src="image.png" width="48">
